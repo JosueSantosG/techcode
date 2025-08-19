@@ -58,12 +58,12 @@ const Contact = () => {
         <h2 className="text-3xl md:text-4xl font-bold mb-5 text-[#fac06ee9]">
           CONTÁCTANOS
         </h2>
-        <p className="mb-10 text-lg md:text-xl text-gray-200">
+        <p className="mb-10 text-lg md:text-xl text-gray-200 text-balance">
           ¿Listo para llevar tu idea al siguiente nivel? Estamos listos para
           ayudarte.
         </p>
       </div>
-      <div className="relative max-w-6xl sm:mx-4 text-center z-10">
+      <div className="relative max-w-6xl sm:mx-4 text-center z-10 m-2">
         <div className="grid md:grid-cols-2 gap-16 bg-[#fff1d482] rounded-lg shadow-md p-10">
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden rounded-lg z-0">
             <img

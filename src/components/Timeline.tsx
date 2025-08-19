@@ -47,13 +47,13 @@ const DEFAULT_EVENTS: TimelineEvent[] = [
   },
   {
     year: "2",
-    title: "Diseño de Interface",
+    title: "Diseño de Interfaces",
     subtitle: "Duración: 5-7 días",
     description: `Wireframes y mockups, prototipo interactivo, diseño responsive y validación con el cliente.`,
   },
   {
     year: "3",
-    title: "Desarrollo",
+    title: "Desarrollo de Software",
     subtitle: "Duración: 2-6 días",
     description: `Desarrollo ágil con sprints, código limpio y documentado, integración continua y revisiones de código.`,
   },

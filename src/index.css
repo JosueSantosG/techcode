@@ -7,3 +7,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes scale-rotate-pulse {
+	0%, 100% {
+		transform: scale(1) rotate(18deg);
+	}
+	50% {
+		transform: scale(1.10) rotate(18deg);
+	}
+}
+
+.animate-scale-rotate-pulse {
+	animation: scale-rotate-pulse 1s infinite;
+}
+

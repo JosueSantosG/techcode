@@ -63,8 +63,8 @@ export default function Header() {
   return (
     <header className="fixed top-0 z-[100000] flex flex-wrap items-center justify-center w-full mx-auto mt-4">
       <nav
-        className={`flex w-full sm:w-auto text-sm font-medium rounded-full 
-        text-white justify-center items-center transition-all duration-300 
+        className={`flex w-auto text-sm font-medium rounded-full 
+         justify-center items-center transition-all duration-300 
         ${
           scrolled
             ? "shadow-lg ring-1 backdrop-blur bg-white/50 ring-white/10"

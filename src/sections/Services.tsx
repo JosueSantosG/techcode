@@ -37,11 +37,11 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ title, description, image }: ServiceCardProps) => {
   return (
-    <div className="relative h-56 overflow-hidden rounded-xl shadow-lg flex items-center justify-center bg-[#f9e1be8a]">
+    <div className="relative h-auto rounded-xl shadow-lg flex items-center justify-center bg-[#f9e1be8a]">
       {/* Capa semitransparente si se desea */}
-      <div className="relative w-full h-full flex flex-col p-8 mt-2">
-        <h3 className="text-xl font-bold mb-3 text-left">{title}</h3>
-        <ul className="list-disc list-inside space-y-1 text-lg">
+      <div className="relative w-full h-full flex flex-col p-4 md:p-8 mt-2">
+        <h3 className="text-lg md:text-xl font-bold mb-3 text-left">{title}</h3>
+        <ul className="list-disc list-inside space-y-1 text-base md:text-lg break-words z-10">
           {description.map((item, idx) => (
             <li key={idx}>{item}</li>
           ))}
@@ -75,7 +75,7 @@ const Services = () => {
       <div className="flex flex-wrap justify-center gap-8 mb-8 ">
         {servicesData.slice(0, 2).map((service, idx) => (
           <div
-            className="border-4 border-x-yellow-700/80 border-y-0 w-full md:w-1/2 max-w-md rounded-2xl"
+            className="border-4 border-x-yellow-700/80 border-y-0 w-full md:w-1/2 max-w-md rounded-2xl hover:scale-105 transition-all shadow-2xl text-base md:text-lg"
             key={idx}
           >
             <ServiceCard {...service} />
@@ -84,7 +84,7 @@ const Services = () => {
       </div>
       {/* Segunda fila: una tarjeta centrada */}
       <div className="flex justify-center">
-        <div className="w-full md:w-1/2 max-w-md border-4 border-x-yellow-700/80 border-y-0 rounded-2xl">
+        <div className="w-full md:w-1/2 max-w-md border-4 border-x-yellow-700/80 border-y-0 rounded-2xl hover:scale-105 transition-all shadow-2xl">
           <ServiceCard {...servicesData[2]} />
         </div>
       </div>
